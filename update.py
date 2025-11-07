@@ -75,7 +75,7 @@ if UPGRADE_PACKAGES.lower() == 'true':
 
 UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
 if len(UPSTREAM_REPO) == 0:
-    UPSTREAM_REPO = "https://github.com/Tamilupdates/KPSML-X"
+    UPSTREAM_REPO = "https://github.com/YourSohit/Xtreamleech"
 
 UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
 if len(UPSTREAM_BRANCH) == 0:
@@ -86,8 +86,8 @@ if UPSTREAM_REPO is not None:
         srun(["rm", "-rf", ".git"])
 
     update = srun([f"git init -q \
-                     && git config --global user.email kpstorrent@gmail.com \
-                     && git config --global user.name kpsbots \
+                     && git config --global user.email Ottwebdlbot@gmail.com \
+                     && git config --global user.name Xtreambotz \
                      && git add . \
                      && git commit -sm update -q \
                      && git remote add origin {UPSTREAM_REPO} \
